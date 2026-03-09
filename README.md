@@ -128,3 +128,6 @@ This project strengthened my understanding of:
 	•	JSON serialization
 	•	API integration using Python
 
+📊 Dataset
+
+This project uses water quality data from BB_WQ.csv, which contains environmental sensor readings including temperature, salinity, pH, turbidity, and oxygen levels. The dataset is used to populate the MongoDB Atlas database for API testing and demonstration.

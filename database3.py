@@ -2,7 +2,14 @@ from dotenv import load_dotenv
 from pymongo import MongoClient
 import certifi
 import os
+import pandas as pd
 
+df = pd.read_csv("data/BB_WQ.csv")
+
+for _, row in df.iterrows():
+    robot1.insert_one(row.to_dict())
+
+print("CSV data inserted into MongoDB")
 load_dotenv()
 
 MONGO_USER = os.environ.get("MONGO_USER")
